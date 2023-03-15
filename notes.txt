@@ -1,0 +1,5 @@
+- what to do with form input? (stored in state - submit to somewhere!)
+- clear input!
+- extract into form component?
+
+- make button and textarea size responsive!
