@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import "./App.css";
 
@@ -5,10 +6,10 @@ function App() {
   const [answer, setAnswer] = useState("");
 
   function handleSubmit() {
-    // style alert
+    // style alert - sweet alert?
     // submit answer - save to database or a file
     if (answer !== "") {
-      alert("Your next location is....");
+      alert("Your next location is [location]!");
       setAnswer("");
     } else if (answer === "") {
       alert("Please submit an answer!");
@@ -25,7 +26,6 @@ function App() {
         </h2>
         <textarea
           id="answer-input"
-          // rows="3"
           onChange={(event) => setAnswer(event.target.value)}
           value={answer}
         ></textarea>
@@ -33,6 +33,11 @@ function App() {
           Submit
         </button>
       </form>
+      {/* <img
+        id="lightbulb-man"
+        src="lightbulbman.png"
+        alt="lightbulb man superhero"
+      ></img> */}
     </div>
   );
 }
